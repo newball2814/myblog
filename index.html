@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<title>My blog</title>
+		<!-- Title bar favicon -->
+		<link rel="icon" type="image/png" href="icons8-among-us-32.png"> 
 		<!-- External CSS -->	
-		<link rel="stylesheet" href="styles.css">
+		<!-- <link rel="stylesheet" href="styles.css"> -->
 	</head>
 	<html lang="vi">
 	<body style="background-color: blanchedalmond;">
@@ -241,7 +243,9 @@
 		<a href="https://4chan.org/g"#CG>Fun page</a>
 
 		<!-- Floating image -->
-		<p style="background-color: blanchedalmond;"><img src="cirno_bouncing.gif" alt="Funky" style="float: left; width: 150px; height: 150px;"><br>Funky<img src="cirno_bouncing.gif" alt="Funky" style="float: center; width: 150px; height: 150px;"></p>
+		<p style="background-color: blanchedalmond;"><img src="cirno_bouncing.gif" alt="Funky" style="float: left; width: 150px; height: 150px;">Funky</p>
+		
+		<br>
 
 		<h3><i>Summary of stuff learned day 3</i></h3>
 		<ul style="list-style-type: circle;">
@@ -258,6 +262,61 @@
 			<li>HTML bookmarks</li>
 			<li>Floating image</li>
 		</ul>
+
+		<br>
+
+		<!----------------------------------------------------------Day 3----------------------------------------------------------------------------->
+		<h1 style="background-color: cadetblue;">Day 4 UOOOOHHHHHHHH</h1>
+
+		<!-- Image map example -->
+		 <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+		<map name="workmap">
+			<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.jpg">
+			<area shape="rect" coords="290,172,333,250" alt="Phone" href="moshi_moshi.jpg">
+			<area shape="circle" coords="337,300,44" alt="Coffee" href="sips_coffe.webp">
+		</map>
+
+		<!---- HTML background image ---->
+
+		<!-- Background image in <body> tag -->
+		<style>
+			body {
+				background-size: 100% 100%;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-image: url('smug1.jpg');
+				color: white;
+			}
+		</style>
+
+		<br>
+
+		<!-- HTML <picture> element -->
+		<!-- Used to contain multiple image source for multiple platform -->
+		<h1>Demonstration of &lt;picture&gt; element</h1>
+		<h1 style="font-size: 200%; font-family: monospace; color: red;">iToddlers BTFO'd</h1>
+		<image>
+			<source media="(min-width: 650px)" srcset="rin_blush.jpg">
+			<source media="(min-width: 450px)" src="thighs.png">
+			<img src="laugh2.gif" alt="satania" style="width: auto;">
+		</image>
+
+		<!-- HTML favicon (the small image on the left of title bar of browser tab) -->
+		<!-- Include below <title> tag -->
+
+
+		<!-- HTML tables -->
+		
+
+		<h3><b>Summary of stuff learned day 4</b></h3>
+		<ul style="list-style-type: circle;">
+			<li>HTML image map with &lt;map&gt; tag</li>
+			<li>HTML image background</li>
+			<li>HTML &lt;picture&gt; element</li>
+			<li>HTML favicon (title icon)</li>
+			<li></li>
+		</ul>	
 	</body>
 	</html>
 </html>
