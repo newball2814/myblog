@@ -484,9 +484,103 @@
 			<li>HTML layout</li>
 		</ul>
 		
-		<!----------------------------------------------------------Day 5----------------------------------------------------------------------------->
+		<!----------------------------------------------------------Day 6----------------------------------------------------------------------------->
 		<h1 style="background-color: darkkhaki;">Day 6 - no updates cuz I'm busy sadge</h1>
+		<hr>
 
+		<!----------------------------------------------------------Day 7----------------------------------------------------------------------------->
+		<h1 style="background-color: beige;">Day 7 - restart the counter Madge</h1>
+		<p>It seems like I've relapse :(, so we'll be restarting the counter from today Madge.</p>
+		<br>
+
+		<!---- HTML responsive ---->
+		<h3>Image will not scale larger than the original size, but scale down if needed to</h3>
+		<img src="sips_coffe.webp" style="max-width: 100%; height: auto;">
+		
+		<!-- Resposive text size -->
+		<h2>Text will be resized as the browser window resize</h2>
+		<h1 style="font-size: 10vw;">Adjust browser size to see the difference</h1>
+		
+		<!-- Media queries -->
+		<h1>This example demonstrates how elements display on different screen size</h1>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		.left {
+		  background-color: #2196F3;
+		  padding: 20px;
+		  float: left;
+		  width: 20%; /* The width is 20%, by default */
+		}
+
+		.main {
+		  background-color: #f1f1f1;
+		  padding: 20px;
+		  float: left;
+		  width: 60%; /* The width is 60%, by default */
+		}
+
+		.right {
+		  background-color: #04AA6D;
+		  padding: 20px;
+		  float: left;
+		  width: 20%; /* The width is 20%, by default */
+		}
+
+		/* Use a media query to add a break point at 800px: */
+		@media screen and (max-width: 800px) {
+		  .left, .main, .right {
+			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+		}
+		</style>
+		
+		<!-- Div elements -->
+		<div class="left">
+		  <p>Left Menu</p>
+		</div>
+
+		<div class="main">
+		  <p>Main Content</p>
+		</div>
+
+		<div class="right">
+		  <p>Right Content</p>
+		</div>
+
+		<!-- HTML Computer Code Elements -->
+		<h2><b>&lt;code&gt; tag</b></h2>
+		<code>
+			x = 9;
+			y = 6;
+			z = x + y;
+		</code>
+		<h2>Use &lt;pre&gt; to preserve whitespace and line-breaks</h2>
+		<pre>
+			<code>
+				x = 9;
+				y = 6;
+				z = x + y;
+			</code>		
+		</pre>
+
+		<h2><b>Keyboard input</b></h2>
+		<h2>Press <kbd>Ctrl + S</kbd> to save document</h2>
+
+		<h2>&lt;samp&gt; for computer output</h2>
+		<h2><samp>Something something<br>And some more</samp></h2>
+
+		<h2>&lt;var&gt; for variables</h2>
+		<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p> 
+
+		<h3><b>Summary of stuff learned day 7</b></h3>
+		<ul style="list-style-type: circle;">
+			<li>HTML layout</li>
+			<li>HTML responsive</li>
+			<li>HTML Computer Code Elements</li>
+		</ul>
 	</body>
 	</html>
 </html>
