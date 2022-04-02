@@ -2,10 +2,13 @@ h2 {
 	color: gainsboro;
 }
 
-p {
-	color: darkcyan;
-	background-color: darkolivegreen;
-	font-size: 150%;
+aside {
+	margin-left: 10px;
+	padding-left: 10px;
+	float: right;
+	background-color: lightgray;
+	font-family: fantasy;
+	font-style: oblique;
 }
 
 a:link {
