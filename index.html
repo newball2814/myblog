@@ -616,7 +616,6 @@
 	<article>
 		<h2>Mozilla Firefox</h2>
 		<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-	</article>
 
 	<article>
 		<h2>Microsoft Edge</h2>
@@ -720,7 +719,7 @@
 	</form>
 
 	<h2>This is the checkbox one with submit button</h2>
-	<form action="https://4chan.org/g"i target="_blank">
+	<form action="https://4chan.org/g" target="_blank">
 	  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 	  <label for="vehicle1"> I have a bike</label><br>
 	  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -730,12 +729,161 @@
 	  <input type="submit" value="Submit">
 	</form>
 
+	<h2>Stuff learned day 9</h2>
 	<ul style="list-style-type: circle;">
 		<li>HTML semantics</li>
 		<li>HTML entities</li>
 		<li>HTML symbols</li>
 		<li>HTML emojis</li>
 		<li>HTML forms and form attribute</li>
+	</ul>
+	<!----------------------------------------------------------Day 10----------------------------------------------------------------------------->
+	<h2 style="background-color: aliceblue; font-size: 200%;">Day 10 - I'll try dopamine detoxing from today (day 1)</h2>
+	<h2><u>&lt;select&gt; defines a drop down menu</u></h2>
+
+	<label for="animu">Choose your anime weebs:</label>
+	<select id="animu" name="animu" size="2" multiple>
+		<option value="Berserk">Berserk</option>
+		<option value="Ero manga sensei">Ero manga sensei</option>
+		<option value="Nichijou">Nichijou</option>
+		<option value="I don't watch anime :v" selected>I don't watch anime :v</option>
+	</select>
+
+	<!-- textarea -->
+	<h2><b><u>&lt;textarea&gt; defines a multi-line input field</u></b></h2>
+
+	<form action="https://voz.vn">
+		<textarea name="" rows="10" cols="30">Type in your favorite anime</textarea>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2><u>&lt;button&gt; defines a clickable button</u></h2>
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+	<!-- fieldset and legend -->
+	<h2>Grouping Form Data with Fieldset</h2>
+
+	<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+	<form action=/action_page.php"">
+		<fieldset>
+			<legend>Personalia:</legend>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>	
+
+	<!-- Datalist -->
+	<h2>Datalist specifies a number of pre-defined elements</h2>
+	<form>
+		<input list="food" name="food">
+		<label for="stuff">Enter your desired food</label><br>
+		<datalist id="food">
+			<option value="cake"></option>
+			<option value="pie"></option>
+			<option value="pho"></option>
+		</datalist>
+	</form>
+
+	<br><br>
+
+	<!-- output element -->
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	  0
+	  <input type="range" id="a" name="a" value="50">
+	  100 +
+	  <input type="number" id="b" name="b" value="50">
+	  =
+	  <output name="x" for="a b"></output>
+	  <br><br>
+	  <input type="submit">
+	</form>
+	
+	<br>
+	<!-- HTML input types -->
+	<form>
+		<label for="username">Username:</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+	
+	<br>
+
+	<h2 style="background-color: darkgoldenrod;">Input type button</h2>
+	<input type="button" onclick="alert('Hello World!')" value="Click Me!"> 
+
+	<br>
+
+	<h2>Input type color</h2>
+	<form>
+		<label for="favcolor">Choose your color:</label>
+		<input type="color" id="favcolor" name="favcolor">
+	</form>
+	
+	<br>
+
+	<h2>Input type date</h2>
+	<form>
+		<label for="date">Choose your date:</label>
+		<input type="date" id="date" name="date">
+	</form>
+
+	<h2>You can also restrict the date using min and max</h2>
+	<form>
+		<label for="datemax">Enter a date before 1980-01-01:</label>
+		<input type=date"" id="datemax" name=datemax"" max="1979-12-31"><br><br>
+		<label for="datemin">Enter a date after 2000-01-01:</label>
+		<input type="date" id="datemin" name="datemin" min="2000-01-02">
+	</form>
+
+	<br>
+
+	<h2>Input type Datetime-local</h2>
+	<form>
+		<label for=birthdaytime"">Birthday (date and time:</label>
+		<input type="datetime-local" id="birthdaytime" name="birthdaytime">
+	</form>
+
+	<br>
+
+	<h2>Input type email</h2>
+	<form>
+		<label for="email">Enter your email:</label>
+		<input type="email" id="email" name="email">
+	</form>
+
+	<br>
+	
+	<h2>Input type file</h2>
+	<form>
+		<label for="file">Choose file from device</label><br>
+		<input type="file" id="file" name="file">
+	</form>
+
+	<br>
+
+	<h2>Input type hidden</h2>
+	<form>
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname"><br><br>
+		<input type="hidden" id="custId" name="custId" value="3487">
+		<input type="submit" value="Submit">
+	</form> 
+
+	<!-- HTML input attributes -->
+
+	<h2><b>Stuff learned day 10</b></h2>
+	<ul style="list-style-type: circle;">
+		<li>HTML Form Elements</li>
+		<li>HTML Input Types</li>
+		<li>HTML input attributes</li>
 	</ul>
 	</body>
 	</html>
